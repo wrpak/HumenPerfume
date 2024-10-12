@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="filter-box">
+    <h3>ตัวกรองสินค้า</h3>
+
+    <!-- Filter by Gender -->
+    <div class="filter-group">
+        <label>เพศ</label>
+        <input type="checkbox" id="male" name="gender" value="male"> ชาย (Men)<br>
+        <input type="checkbox" id="female" name="gender" value="female"> หญิง (Women)<br>
+        <input type="checkbox" id="unisex" name="gender" value="unisex"> ไม่ระบุเพศ (Unisex)<br>
+    </div>
+
+    <!-- Filter by Scents -->
+    <div class="filter-group">
+        <label>กลิ่น (Scents)</label>
+        <input type="checkbox" id="floral" name="scent" value="floral"> ดอกไม้<br>
+        <input type="checkbox" id="woody" name="scent" value="woody"> ไม้หอม<br>
+        <input type="checkbox" id="fruity" name="scent" value="fruity"> ผลไม้<br>
+        <input type="checkbox" id="spicy" name="scent" value="spicy"> เครื่องเทศ<br>
+    </div>
+
+    <!-- Filter by Base Note -->
+    <div class="filter-group">
+        <label>Base Note</label>
+        <input type="checkbox" id="amber" name="base_note" value="amber"> แอมเบอร์<br>
+        <input type="checkbox" id="musk" name="base_note" value="musk"> มัสค์<br>
+        <input type="checkbox" id="vanilla" name="base_note" value="vanilla"> วานิลลา<br>
+    </div>
+
+    <!-- Filter by Middle Note -->
+    <div class="filter-group">
+        <label>Middle Note</label>
+        <input type="checkbox" id="rose" name="middle_note" value="rose"> กุหลาบ<br>
+        <input type="checkbox" id="jasmine" name="middle_note" value="jasmine"> มะลิ<br>
+        <input type="checkbox" id="sandalwood" name="middle_note" value="sandalwood"> ไม้จันทน์<br>
+    </div>
+
+    <!-- Filter by Price -->
+    <div class="filter-group">
+        <label>ราคา</label>
+        <input type="radio" name="price" value="below_200"> ไม่เกิน ฿200<br>
+        <input type="radio" name="price" value="200_700"> ฿200 - ฿700<br>
+        <input type="radio" name="price" value="700_1500"> ฿700 - ฿1,500<br>
+        <input type="number" name="min_price" placeholder="฿ขั้นต่ำ" min="0"> -
+        <input type="number" name="max_price" placeholder="฿สูงสุด" min="0"><br>
+    </div>
+
+    <!-- Filter by Rating -->
+    <div class="filter-group">
+        <label>คะแนนผลิตภัณฑ์</label>
+        <input type="radio" name="rating" value="4_up"> ★★★★ ขึ้นไป<br>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">ค้นหา</button>
+</div>
+
+</body>
+</html>
